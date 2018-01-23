@@ -1,0 +1,81 @@
+.search-landing{
+  height: 80vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-image: url('../../images/movie-theatre.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index:1;
+}
+
+.searchbar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.translucent{
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 2;
+}
+
+.title-header{
+  margin: 0;
+  color: red;
+}
+
+.searchbar, .search-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+  z-index: 3;
+}
+
+.search-icon{
+  height: 40px;
+  width: 35px;
+  background: #FFF;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.searchbar{
+  height: 40px;
+  width: 50vw;
+  padding-left: 10px;
+  font-size: 28px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.search-btn{
+  height: 40px;
+  width: 100px;
+  margin: 15px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: red;
+  color: #F2F2F2;
+  font-size: 16px;
+  border-radius: 3px;
+  z-index: 5;
+}
+
+.search-btn:hover{
+  transition: all ease 0.5s;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px #FFF;
+}

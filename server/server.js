@@ -19,8 +19,10 @@ app.get('/api/popular/movies', (req, res, next)=> {
   });
 });
 
-app.get('/api/search/movies?name=', (req, res, next)=> {
-  axios.get(`${apiURL}/search/movie${apiKey}&language=en-US&page=1&include_adult=true&query=${req.params.name}`)
+app.get(`/api/search/movies/:name`, (req, res, next)=> {
+  axios.get(`${apiURL}/search/movie${apiKey}&language=en-US&page=1&include_adult=true&query=${req.params.name}`).then(response=> {
+    res.status(200).json(response.data);
+  });
 });
 
 app.listen(port, ()=> {

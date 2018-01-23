@@ -24,7 +24,7 @@ export default class MoviesContainer extends Component{
     const movies= this.state.moviesList.map((movie, index)=> {
       return(
         <div key={ index } className='movie-card'>
-          <img style={{ height: '80%', width: '100%' }} src={ imgURL + movie.poster_path }></img>
+          <img style={{ height: '85%', width: '100%' }} src={ imgURL + movie.poster_path } alt='movie poster'></img>
           <h3>{ movie.original_title }</h3>
           <p>Rating: { movie.vote_average }/10</p>
         </div>

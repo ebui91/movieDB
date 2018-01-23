@@ -1,0 +1,10 @@
+.App {
+  margin-top: 0;
+  text-align: center;
+  background: #111;
+}
+
+.title-header{
+  margin: 0;
+  color: red;
+}

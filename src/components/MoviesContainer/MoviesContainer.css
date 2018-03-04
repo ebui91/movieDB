@@ -7,10 +7,10 @@
 }
 
 .movie-card{
-  height: 90vh;
-  width: 40%;
-  margin-bottom: 15px;
+  height: 80vh;
+  width: 30%;
+  margin-bottom: 5px;
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.9);
-  background: #333;
+  background: #222;
   color: #F2F2F2;
 }

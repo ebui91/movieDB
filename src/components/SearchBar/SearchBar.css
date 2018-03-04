@@ -1,11 +1,13 @@
 .search-landing{
   height: 80vh;
-  width: 80%;
+  width: 100%;
+  margin-top: 60px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
-  background-image: url('../../images/movie-theatre.jpg');
+  background-image: url('../../assets/images/movie-theatre.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -21,7 +23,7 @@
 
 .translucent{
   height: 80vh;
-  width: 80%;
+  width: 100%;
   margin: auto;
   background: rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -67,7 +69,7 @@
   padding: 5px;
   border: none;
   outline: none;
-  background: red;
+  background: #D51616;
   color: #F2F2F2;
   font-size: 16px;
   border-radius: 3px;
@@ -75,7 +77,21 @@
 }
 
 .search-btn:hover{
-  transition: all ease 0.5s;
+  transition: all ease 0.3s;
   cursor: pointer;
-  box-shadow: 1px 1px 1px 1px #FFF;
+  background: red;
+  box-shadow: 0px 0px 10px 0px #FFF;
+}
+
+#netflix{
+  font-family: BebaseNeue;
+  font-size: 60px;
+  font-weight: lighter;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+  padding: 15px;
+  margin-top: 0;
+  color: #E50914;
+  letter-spacing: 0.25em;
+  z-index: 5;
 }

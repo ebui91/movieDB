@@ -31,6 +31,9 @@ export default class SearchBar extends Component{
     return(
       <div className='search-landing'>
         <div className='translucent'></div>
+
+        <h1 id='netflix'>THE MOVIE DB</h1>
+
         <div className='searchbar-container'>
           <div className='search-icon'>
             <i style={{ backgroundColor: 'white' }} className='fa fa-search fa-2x' aria-hidden="true"></i>
@@ -39,7 +42,13 @@ export default class SearchBar extends Component{
           <input className='searchbar' type='text' placeholder='Search films...' onChange={ (e)=> this.handleSearchInput(e.target.value) }></input>
 
           <Link to={ `/search/movies/${this.state.searchVal}` }>
-            <button className='search-btn' onClick={ ()=> this.submitSearch() }>SEARCH</button>
+            <button className='search-btn' onClick={ ()=> this.submitSearch() }
+              onKeyPress= { (e)=> {
+                if(e.charCode == 13){
+                  this.submitSearch();
+                }
+              }
+    }>SEARCH</button>
           </Link>
         </div>
       </div>

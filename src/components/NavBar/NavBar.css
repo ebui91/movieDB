@@ -1,0 +1,26 @@
+.nav-container{
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  background-color: rgba(0,0,0, 0.6);
+  color: #F2F2F2;
+  font-family: 'Roboto', Arial, sans-serif;
+  opacity: 0;
+  z-index: 10;
+}
+
+.nav-container:hover{
+  transition: all ease 0.4s;
+  opacity: 1.0;
+}
+
+.nav-home:hover{
+  cursor: pointer;
+  transition: all ease 0.5s;
+  color: #E50914;
+}

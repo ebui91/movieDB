@@ -1,5 +1,11 @@
-.App {
+.App{
   margin-top: 0;
   text-align: center;
   background: #111;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@font-face{
+  font-family: BebaseNeue;
+  src: url('./assets/fonts/bebas_neue/BebasNeue.otf') format('opentype');
 }
